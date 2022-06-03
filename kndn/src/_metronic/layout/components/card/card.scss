@@ -1,0 +1,49 @@
+.card-hightlight-item {
+  & + .card-hightlight-item {
+    border-top: 1px dashed rgba(#000, 0.15);
+  }
+  .ant-rate {
+    font-size: 14px;
+    color: #fab314;
+
+    .ant-rate-star:not(:last-child) {
+      margin-right: 6px;
+    }
+  }
+  .card-comment {
+    a {
+      font-weight: 400;
+      font-size: 13px;
+    }
+  }
+}
+#content-right {
+  .card {
+    .card-header {
+      background-color: #0549aa;
+      color: #fff;
+      min-height: 40px;
+
+      .card-title {
+        color: #fff;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-weight: 500;
+
+        .card-label {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1024px) {
+  .card-hightlight-local > span {
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}

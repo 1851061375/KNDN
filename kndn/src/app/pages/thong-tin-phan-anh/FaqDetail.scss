@@ -1,0 +1,24 @@
+.react-multi-carousel-dot-list {
+  margin: 10px !important;
+}
+.react-multi-carousel-dot--active button {
+  background: #a7a5a5 !important;
+}
+.ant-comment-inner {
+  padding: 10px 0;
+}
+.ant-comment-content-author {
+  .ant-comment-content-author-name {
+    font-size: 14px;
+    font-weight: 500;
+    color: #2462ae;
+  }
+}
+.ant-comment {
+  & + .ant-comment {
+    border-top: 1px dashed #cfcfcf;
+  }
+}
+.ant-comment-actions {
+  margin-top: 8px;
+}

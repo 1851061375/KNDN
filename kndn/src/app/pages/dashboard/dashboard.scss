@@ -1,0 +1,25 @@
+.card-searchform {
+    .scroll {
+        padding-top: 10px;
+
+        .nav-item {
+            position: relative;
+            .card-status {
+                width: 22px;
+                height: 22px;
+                line-height: 21px;
+                font-size: 10px;
+                top: -15px;
+                right: 15px;
+                position: absolute;
+                top: 0;
+                right: 0;
+                transform: translate(10px, -6px);
+            }
+        }
+    }
+}
+
+#viewmore :hover {
+    color: #1890ff  ;
+}

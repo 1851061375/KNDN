@@ -1,0 +1,9 @@
+#listNotificationAndEvents {
+    padding: 0px 3px !important;
+
+    .ant-list-item {
+        >div {
+            margin-left: 3px;
+        }
+    }
+}

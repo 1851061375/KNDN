@@ -1,0 +1,129 @@
+.card {
+  &-faq-item {
+    &.card {
+      transition: all ease 0.3s;
+      height: 100%;
+
+      &:hover {
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      }
+      .card-body {
+        padding: 15px 10px;
+
+        .text-muted {
+          font-size: 13px;
+          color: #666 !important;
+        }
+      }
+      .card-title {
+        overflow: hidden;
+        display: block;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        color: #064394;
+        font-size: 15px;
+        min-height: 45px;
+
+        &:hover {
+          color: rgb(211, 12, 12);
+        }
+      }
+      .card-footer {
+        padding: 6px 10px;
+
+        .ant-rate {
+          font-size: 16px;
+          color: #fab314;
+
+          .ant-rate-star:not(:last-child) {
+            margin-right: 6px;
+          }
+        }
+        .card-comment {
+          a {
+            font-weight: 400;
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  .card-body {
+    position: relative;
+  }
+  .card-status {
+    width: 28px;
+    height: 28px;
+    color: #fff;
+    border: 1px solid #fff;
+    text-align: center;
+    line-height: 28px;
+    font-size: 18px;
+    border-radius: 30px;
+    top: -15px;
+    right: 15px;
+  }
+  .card-category {
+    color: #fff;
+    background: #39b54a;
+    padding: 3px 8px;
+    top: -10px !important;
+
+    &:after {
+      position: absolute;
+      top: 0;
+      width: 8px;
+      height: 10px;
+      left: 100%;
+      content: '';
+      border-bottom: 10px #168125 solid;
+      border-left: 0px transparent solid;
+      border-right: 8px transparent solid;
+    }
+    .card-category-icon {
+      width: 25px;
+      height: 25px;
+      line-height: 19px;
+      text-align: center;
+      color: #fff;
+      margin-right: 10px;
+      border: 1px solid #fff;
+      padding: 3px;
+      border-radius: 30px;
+      display: inline-block;
+
+      i {
+        color: #fff;
+        font-size: 13px;
+      }
+    }
+  }
+  .card-faq-desc {
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+  .card-img-wrapper {
+    height: 195px;
+    width: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+.card-label {
+  color: #fff !important;
+}
+
+.card-header__tk {
+  background: #1e62b7 !important;
+  min-height: 30px !important;
+  color: #fff;
+}

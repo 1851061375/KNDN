@@ -1,0 +1,140 @@
+.h-home-table {
+    min-width: 760px;
+
+    p {
+        margin: 0
+    }
+    .h-tbl-border {
+        position: relative;
+
+        p {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
+
+            a {
+                font-weight: bold;
+                text-transform: uppercase;
+                color: #1060a8;
+                margin-bottom: 5px;
+                transition: all ease 0.3s;
+
+                &:hover {
+                    color: #cc0000
+                }
+            }
+        }
+        .h-tbl-comment{
+            -webkit-line-clamp: 3 !important;
+        }
+    }
+}
+
+.ant-tabs-card > .ant-tabs-nav .ant-tabs-tab{
+    background: #f2f3f3;
+    color: #336699;
+    transition: all ease 0.3s;
+    border: none !important;
+    border-bottom: 2px solid rgba(#336699, 0.5) !important;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 500;
+
+    &.ant-tabs-tab-active, &:hover {
+        color: #cc0000;
+        background: #fff;
+        border-color: #cc0000 !important;
+
+        .ant-tabs-tab-btn {
+            color: #cc0000
+        }
+    }
+}
+
+.modal-fileAttach {
+    .ant-modal-content {
+        border-radius: 5px;
+    }
+    .ant-modal-header {
+        background: #336699;
+        color: #fff;
+        border-radius: 5px 5px 0 0;
+
+        .ant-modal-title {
+            color: #fff;
+            font-family: roboto;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+    }
+}
+@media (min-width: 992px) {
+    .h-home-table {
+        .h-tbl-border:after {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            bottom: 10px;
+            width: 1px;
+            content: '';
+            border-right: 1px solid #c4c4c4;
+        }
+        tr {
+            &>td {
+                padding-top: 1rem;
+                padding-bottom: 1rem
+            }
+        }
+    }
+    .modal-fileAttach {
+        min-width: 800px;
+    }
+    .section-document-home {
+        &>.container {
+            padding-top: 20px;
+            padding-bottom: 10px;
+        }
+    }
+}
+@media (max-width: 580px) {
+    .h-home-table {
+        min-width: 300px;
+
+        &>tbody {
+            tr {
+                &>td {
+                    width: 100%;
+                    display: block;
+
+                    &:first-child {
+                        text-align: center;
+                    }
+                    .h-tbl-time {
+                        margin: auto
+                    }
+                }
+            }
+        }
+        .h-tbl-border p {
+            -webkit-line-clamp: 5
+        }
+    }
+    .ft-statics {
+        margin-bottom: 20px;
+    } 
+    .footer-title {
+        text-align: center;
+
+        .ft-link-app {
+            &>.d-flex {
+                justify-content: center;
+            }
+        }
+    }
+    .ft-link-pr {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

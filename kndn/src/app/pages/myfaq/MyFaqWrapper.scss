@@ -1,0 +1,36 @@
+.form {
+    border-bottom: none !important;
+    font-size: 16px !important;
+    margin-bottom: 3px !important;
+    // direction: rtl;
+}
+
+.form1 :first-child .form {
+    border-bottom: none !important;
+    font-size: 15px !important;
+    margin-bottom: 3px !important;
+}
+.ant-tabs-card {
+    &> .ant-tabs-nav {
+        .ant-tabs-tab {
+            background: #d9eefe;
+            border: none !important;
+            border-radius: 3px 3px 0 0 !important;
+
+            &.ant-tabs-tab-active {
+                color: #fff;
+                background: #0549aa;
+                .ant-tabs-tab-btn {
+                    color: #fff
+                }
+            }
+        }
+    }
+}
+.ant-tabs-tab-btn {
+    font-size: 15px;
+    font-weight: 500;
+}
+.faq-personal-footer .ant-rate {
+    font-size: 17px;
+}

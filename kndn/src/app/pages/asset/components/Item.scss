@@ -1,0 +1,24 @@
+.card {
+  &-auction {
+    .card-title {
+      color: #336699;
+      font-weight: bold;
+      font-size: 19px;
+      margin-bottom: 20px;
+      width: 100%; display: inline-block;
+      transition: all ease 0.3s;
+
+      &:hover {
+        color: #cc0000
+      }
+    }
+    .card-time {
+      font-size: 15px;
+    }
+  }
+  .card-body {
+    position: relative;
+  }
+  
+}
+

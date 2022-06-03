@@ -1,0 +1,77 @@
+html {
+  font-family: sans-serif; // 1
+  text-size-adjust: 100%; // 2
+  -webkit-text-size-adjust: 100%; // 2
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: $root-font-size !important;
+    font-weight: $font-weight-base;
+    font-family: $font-family-sans-serif;
+
+    // Tablet mode
+    @include media-breakpoint-down(lg) {
+        font-size: $root-font-size-lg !important;
+    }
+
+    // Mobile mode
+    @include media-breakpoint-down(md) {
+        font-size: $root-font-size-md !important;
+    }
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    a:hover,
+    a:active,
+    a:focus {
+        text-decoration: none !important;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    color: $body-color;
+}
+
+// Angular integration
+router-outlet {
+    display: none;
+}
+
+canvas {
+    user-select: none;
+}
+.banner>.container {position: relative}
+.banner {
+	background: #064394;
+	background-position:top right;
+	background-repeat:no-repeat;
+	background-size: cover;
+	color: #fff;
+}
+.banner .tandan-div-banner {
+    margin: 0 -10px; padding: 10px 0;
+}
+.headerNav .navbar-nav>a {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 12px 15px !important;
+    color: #fff !important;
+    text-shadow: none;
+}
+.headerNav .navbar-nav>.active {
+    background-color: rgba(0,0,0,0.05);
+    border-bottom: 2px solid #cc0000;
+}
+
+@media (min-width: 580px){
+    
+}
